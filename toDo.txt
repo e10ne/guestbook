@@ -1,0 +1,21 @@
+css
+
+v   inloggen?
+
+v   form aanmaken
+
+v  $_post uitlezen om nieuwe berichten te laten zien
+
+v   een bestand gebruiken om de berichten in op te slaan
+
+v   bestand met berichten uitlezen en laten zien
+
+v   knop voor verwijderen van een berichten
+
+v   delete function voor individuele berichten
+
+v  meerdere pagina's?
+
+v   plaatjes toevoegen?
+
+v   gebruikers met verschillende rollen (admin, moderator, gast, ect)

@@ -19,7 +19,7 @@
             default:
                 return false;
         }
-    }
+    } // checkImageExt
 
     function getImg(string $location, int $imgWidth = 64, int $imgHeight = 64) {
         // default image
@@ -34,7 +34,7 @@
             return "<img src='" . htmlspecialchars($defautImage) . "' width='{$imgWidth}' height='{$imgHeight}'>";
         }
         
-    }
+    } // getImg
 
     // || voorbeeldimages ||
     // echo getImg("https://ps.w.org/facebook-conversion-pixel/assets/icon-256x256.png?rev=2278926");
@@ -51,9 +51,6 @@
 
 
     function pagination(int $postsPerPage = 2, int $offset = 2) {
-        // get full site link
-        $actual_link = "//$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-        $actual_link = preg_replace("/\?.*/", "", $actual_link);
 
         if (file_exists("messages.txt")) {
             $etienneMessages = file("messages.txt");
@@ -85,43 +82,36 @@
                 $pageHigh = $currPage + $offset;
             }
 
-
             // display page links with parameter page
-            // some styling needed
             echo "<nav><ul>";
 
             if($pageLow > 1) {
-                echo "<li><a href='" . htmlspecialchars($actual_link) . "?page=1&amount=" . $postsPerPage . "'>&lt;&lt;&lt; First Page</a></li>";
+                echo "<li><a href='guestbook.php?page=1&amount=" . $postsPerPage . "'>&lt;&lt;&lt; First Page</a></li>";
                 if($pageLow > 2) {
                     echo "...";
                 }
             }
 
             for($i = $pageLow; $i <= $pageHigh; $i++) {
-                echo "<li><a href=\"" . htmlspecialchars($actual_link) . "?page=" . $i . "&amount=" . $postsPerPage . "\">{$i}</a></li>";
+                if($i == $currPage) {
+                    echo "<li>{$i}</li>";
+                } else {
+                    echo "<li><a href='guestbook.php?page=" . $i . "&amount=" . $postsPerPage . "'>{$i}</a></li>";
+                }
             }
 
             if($pageHigh < $totalPages) {
                 if($pageHigh < ($totalPages - 1)) {
                     echo "...";
                 }
-                echo "<li><a href='" . htmlspecialchars($actual_link) . "?page=" . $totalPages . "&amount=" . $postsPerPage . "'>&gt;&gt;&gt; Last Page</a></li>";
+                echo "<li><a href='guestbook.php?page=" . $totalPages . "&amount=" . $postsPerPage . "'>&gt;&gt;&gt; Last Page</a></li>";
             }
             echo "</ul></nav>";
-
-           
 
         } else {
             // messages.txt does not exist
             echo "FILE NOT FOUND";
             return false;
         }
-    }
-
-
-    function etienneTest(){
-        pagination();
-    }
-    
-
+    } // pagination
 ?>

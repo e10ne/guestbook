@@ -31,7 +31,7 @@ session_start();
         </div>
         <h2>Berichtenarchief:</h2>
         <?php
-            etienneTest();
+            pagination();
             messageBoard();
             gavinTest();
             

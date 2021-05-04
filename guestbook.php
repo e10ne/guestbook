@@ -2,7 +2,8 @@
 session_start();
 ?>
 <html>
-    <head>    
+    <head>
+        <title>Guest Book</title>
         <meta charset="UTF-8">
         <?php include "etienneFunctions.php" ?>
         <?php include "daanFunctions.php" ?>

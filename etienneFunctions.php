@@ -22,16 +22,16 @@
     } // checkImageExt
 
     function getImg(string $location, int $imgWidth = 64, int $imgHeight = 64) {
-        // default image
-        $defautImage = "";
+        // default image ?itemid=14554176
+        $defautImage = "https://media1.tenor.com/images/fbe8b29e01a6b2851449c3a3d28bff52/tenor.gif";
 
         // gooit parameters uit de link (alles vanaf ?) 
         $filteredLocation = preg_replace("/\?.*/", "", $location);
 
         if(checkImageExt($filteredLocation) === true) {
-            return "<img src='" . htmlspecialchars($filteredLocation) . "' width='{$imgWidth}' height='{$imgHeight}'>";
+            return " <img src='" . htmlspecialchars($filteredLocation) . "' width='{$imgWidth}' height='{$imgHeight}'>";
         } else {
-            return "<img src='" . htmlspecialchars($defautImage) . "' width='{$imgWidth}' height='{$imgHeight}'>";
+            return " <img src='" . htmlspecialchars($defautImage) . "' width='{$imgWidth}' height='{$imgHeight}'>";
         }
         
     } // getImg

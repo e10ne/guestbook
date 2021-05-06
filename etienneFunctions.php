@@ -21,7 +21,7 @@
         }
     } // checkImageExt
 
-    function getImg(string $location, int $imgWidth = 64, int $imgHeight = 64) {
+    function getImg(string $location, int $imgWidth = 128, int $imgHeight = 128) {
         // default image
         $defautImage = "https://media1.tenor.com/images/fbe8b29e01a6b2851449c3a3d28bff52/tenor.gif";
 
@@ -37,13 +37,12 @@
     } // getImg
 
     // || voorbeeldimages ||
-    // echo getImg("https://ps.w.org/facebook-conversion-pixel/assets/icon-256x256.png?rev=2278926");
-    // echo getImg("https://i.imgur.com/8G3NXcW.gif");
-    // echo getImg("https://i.imgur.com/m6lSnfO.png");
-    // echo getImg("https://images.all-free-download.com/images/graphicthumb/hd_pictures_of_animals_01_hd_picture_169003.jpg");
-    // echo getImg("https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/410.svg");
-    // echo getImg("https://res.cloudinary.com/demo/image/upload/fl_awebp/bored_animation.webp");
-    // echo getImg("https://i.guim.co.uk/img/media/26392d05302e02f7bf4eb143bb84c8097d09144b/446_167_3683_2210/master/3683.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=49ed3252c0b2ffb49cf8b508892e452d"); // word niet ingeladen (parameters verplicht?)
+    // https://ps.w.org/facebook-conversion-pixel/assets/icon-256x256.png?rev=2278926
+    // https://i.imgur.com/8G3NXcW.gif
+    // https://i.imgur.com/m6lSnfO.png
+    // https://images.all-free-download.com/images/graphicthumb/hd_pictures_of_animals_01_hd_picture_169003.jpg
+    // https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/410.svg
+    // https://res.cloudinary.com/demo/image/upload/fl_awebp/bored_animation.webp
     // || voorbeeldimages ||
 
 
@@ -86,9 +85,9 @@
             echo "<nav><ul>";
 
             if($pageLow > 1) {
-                echo "<li><a href='guestbook.php?page=1&amount=" . $postsPerPage . "'>&lt;&lt;&lt; First Page</a></li>";
+                echo "<li><a href='guestbook.php?page=1&amount=" . $postsPerPage . "'>&lt;&dash;First Page</a></li>";
                 if($pageLow > 2) {
-                    echo "...";
+                    echo "<li>...</li>";
                 }
             }
 
@@ -102,9 +101,9 @@
 
             if($pageHigh < $totalPages) {
                 if($pageHigh < ($totalPages - 1)) {
-                    echo "...";
+                    echo "<li>...</li>";
                 }
-                echo "<li><a href='guestbook.php?page=" . $totalPages . "&amount=" . $postsPerPage . "'>&gt;&gt;&gt; Last Page</a></li>";
+                echo "<li><a href='guestbook.php?page=" . $totalPages . "&amount=" . $postsPerPage . "'>Last Page&dash;&gt;</a></li>";
             }
             echo "</ul></nav>";
 

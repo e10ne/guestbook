@@ -2,19 +2,15 @@
 <div id="2">Gavin | nog een bericht | <form action="guestbook.php" method="post"><button name="delete" value="2">delete</button></form></div>
 <div id="3">Daan | Test bericht | <form action="guestbook.php" method="post"><button name="delete" value="3">delete</button></form></div>
 <div id="4">Etienne | Test bericht | <form action="guestbook.php" method="post"><button name="delete" value="4">delete</button></form></div>
-<div id="5">Gavin | test<img src='https://i.imgur.com/8G3NXcW.gif' width='64' height='64'> | <form action="guestbook.php" method="post"><button name="delete" value="5">delete</button></form></div>
+<div id="5">Gavin | test <img src='https://i.imgur.com/8G3NXcW.gif' width='128' height='128'> | <form action="guestbook.php" method="post"><button name="delete" value="5">delete</button></form></div>
 <div id="6">Gavin | test<p style="color: red;">This is not an valid image.</p> | <form action="guestbook.php" method="post"><button name="delete" value="6">delete</button></form></div>
 <div id="7"> | <p style="color: red;">This is not an valid image.</p> | <form action="guestbook.php" method="post"><button name="delete" value="7">delete</button></form></div>
-<div id="8">etienne | asdsad | <form action="guestbook.php" method="post"><button name="delete" value="8">delete</button></form></div>
-<div id="9">etienne | asdsad | <form action="guestbook.php" method="post"><button name="delete" value="9">delete</button></form></div>
-<div id="10">etienne | asdsad | <form action="guestbook.php" method="post"><button name="delete" value="10">delete</button></form></div>
 <div id="11">etienne | asdsad | <form action="guestbook.php" method="post"><button name="delete" value="11">delete</button></form></div>
 <div id="12">etienne | asdsad | <form action="guestbook.php" method="post"><button name="delete" value="12">delete</button></form></div>
 <div id="13"> | hoi | <form action="guestbook.php" method="post"><button name="delete" value="13">delete</button></form></div>
 <div id="14">daan | hoi | <form action="guestbook.php" method="post"><button name="delete" value="14">delete</button></form></div>
-<div id="15">daan | hoi<img src='https://i.imgur.com/8G3NXcW.gif' width='64' height='64'> | <form action="guestbook.php" method="post"><button name="delete" value="15">delete</button></form></div>
+<div id="15">daan | hoi <img src='https://i.imgur.com/8G3NXcW.gif' width='128' height='128'> | <form action="guestbook.php" method="post"><button name="delete" value="15">delete</button></form></div>
 <div id="16">daan |  | <form action="guestbook.php" method="post"><button name="delete" value="16">delete</button></form></div>
-<div id="17">daan | hoi<img src='https://i.imgur.com/8G3NXcW.gif' width='64' height='64'> | <form action="guestbook.php" method="post"><button name="delete" value="17">delete</button></form></div>
-<div id="18">daan | hoi<img src='https://i.imgur.com/8G3NXcW.gif' width='64' height='64'> | <form action="guestbook.php" method="post"><button name="delete" value="18">delete</button></form></div>
-<div id="19">etienne | asdsad<img src='https://ps.w.org/facebook-conversion-pixel/assets/icon-256x256.png' width='64' height='64'> | <form action="guestbook.php" method="post"><button name="delete" value="19">delete</button></form></div>
-<div id="20">etienne | asdsad <img src='https://media1.tenor.com/images/fbe8b29e01a6b2851449c3a3d28bff52/tenor.gif' width='64' height='64'> | <form action="guestbook.php" method="post"><button name="delete" value="20">delete</button></form></div>
+<div id="17">daan | hoi <img src='https://i.imgur.com/8G3NXcW.gif' width='128' height='128'> | <form action="guestbook.php" method="post"><button name="delete" value="17">delete</button></form></div>
+<div id="18">daan | hoi <img src='https://i.imgur.com/8G3NXcW.gif' width='128' height='128'> | <form action="guestbook.php" method="post"><button name="delete" value="18">delete</button></form></div>
+<div id="19">etienne | Hello <img src='https://i.imgur.com/m6lSnfO.png' width='128' height='128'> | <form action="guestbook.php" method="post"><button name="delete" value="19">delete</button></form></div>

@@ -35,7 +35,6 @@ session_start();
             pagination();
             messageBoard();
             gavinTest();
-            
         ?>
         <form action="guestbook.php" method="post">
             <input type="hidden" name="reset">
